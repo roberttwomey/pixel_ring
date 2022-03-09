@@ -16,8 +16,10 @@ class PixelRing(object):
     def __init__(self, pattern='google'):
         if pattern == 'echo':
             self.pattern = Echo(show=self.show)
-        else:
+        elif pattern =='google':
             self.pattern = GoogleHome(show=self.show)
+        else:
+            self.pattern = SmartEnv(show = self.show)
 
         self.dev = APA102(num_led=self.PIXELS_N)
 
@@ -41,8 +43,6 @@ class PixelRing(object):
             self.pattern = GoogleHome(show=self.show)
         else:
             self.pattern = SmartEnv(show = self.show)
-        
-            
 
     def wakeup(self, direction=0):
         def f():
