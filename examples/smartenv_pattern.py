@@ -15,7 +15,7 @@ if __name__ == '__main__':
     power.on()
 
     pixel_ring.set_brightness(20)
-    pixel_ring.change_pattern('echo')
+    pixel_ring.change_pattern('smartenv')
     while True:
 
         try:
