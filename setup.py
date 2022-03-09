@@ -32,7 +32,7 @@ setup(
     long_description=README,
     author="Yihui Xiong",
     author_email='yihui.xiong@hotmail.com',
-    url='https://github.com/respeaker/pixel_ring',
+    url='https://github.com/roberttwomey/pixel_ring',
     packages=find_packages(include=['pixel_ring']),
     include_package_data=True,
     install_requires=requirements,
