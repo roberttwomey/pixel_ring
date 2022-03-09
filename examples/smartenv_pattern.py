@@ -21,8 +21,10 @@ if __name__ == '__main__':
         try:
             pixel_ring.wakeup()
             time.sleep(3)
-            pixel_ring.think()
+            pixel_ring.listen()
             time.sleep(3)
+            pixel_ring.think()
+            time.sleep(6)
             pixel_ring.speak()
             time.sleep(6)
             pixel_ring.off()
