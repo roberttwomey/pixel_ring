@@ -144,7 +144,7 @@ class GoogleHome(object):
 
         
 class SmartEnv(object):
-    def __init__(self, show):
+    def __init__(self, show, number=12):
 #         self.basis = [0] * 4 * 12
 #         self.basis[0 * 4 + 1] = 8
 #         self.basis[3 * 4 + 1] = 4
@@ -158,7 +158,7 @@ class SmartEnv(object):
             raise ValueError('show parameter is not callable')
 
         # copied from Echo
-        self.pixels_number = 12
+        self.pixels_number = number
         self.pixels = [0] * 4 * number
         
         self.show = show
