@@ -37,8 +37,12 @@ class PixelRing(object):
     def change_pattern(self, pattern):
         if pattern == 'echo':
             self.pattern = Echo(show=self.show)
-        else:
+        elif pattern =='google':
             self.pattern = GoogleHome(show=self.show)
+        else:
+            self.pattern = SmartEnv(show = self.show)
+        
+            
 
     def wakeup(self, direction=0):
         def f():
