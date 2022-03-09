@@ -144,6 +144,8 @@ class GoogleHome(object):
 
         
 class SmartEnv(object):
+    brightness = 24 * 8
+        
     def __init__(self, show, number=12):
 #         self.basis = [0] * 4 * 12
 #         self.basis[0 * 4 + 1] = 8
