@@ -160,12 +160,12 @@ class SmartEnv(object):
 
     def wakeup(self, direction=0):
         # set blue value to brightness
-        pixels = [0, 0, self.brightness/2, 0] * self.pixels_number
+        pixels = [0, 0, self.brightness*0.25, 0] * self.pixels_number
 
         self.show(pixels)
 
     def listen(self):
-        pixels = [0, 0, self.brightness, 0] * self.pixels_number
+        pixels = [0, 0, self.brightness*0.75, 0] * self.pixels_number
 
         self.show(pixels)
 
